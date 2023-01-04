@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href= "./style.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!--JS for icons-->
+    <script src="https://kit.fontawesome.com/493b946824.js" crossorigin="anonymous"></script>
+    
+    <!-- Preload background images -->
+    <link rel="preload" as="image" href="./images/2-gradient.png">
+    <link rel="preload" as="image" href="./images/all-recipes-img.png">
+    <link rel="preload" as="image" href="./images/all-recipes-banner.png">
+    <link rel="preload" as="image" href="./images/footer_bg.png">
+    
+    <title>Gourmetly - Recipe Search</title>
+</head>
+
+<body>
+    <!--Top Navigation bar-->
+    <nav class="navbar">
+      <div class="brand-title">
+        <img src="./images/gourmetly_logo.png" alt="Logo" width="45" height="45" class="d-inline-block align-text-top">
+        <h2 style="letter-spacing:0.1em;">GOURMETLY</h2> 
+      </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#search-recipe">Search</a></li>
+        <li><a href="#all-recipes">Explore</a></li>
+      </ul> 
+      </div>
+    </nav>
+
+    <!--Header Section-->
+    <div class="hero-container"  id="home">
+        <div class="content-container">
+          <div class="content-text">
+            <h1 class="content-heading">Discover Delicious Recipes, Find Your Perfect Dish Here!</h1>
+            <p class="content-para">We help you find the perfect meal for any occasion. Whether you are looking for a quick and easy weeknight dinner, a healthy lunch option, or a show-stopping dessert for a special event, we have something for everyone. Search your favourite recipes and explore meal ideas.</p>
+            <a  href="#search-recipe"  class="get-started-btn">Get Started</a>
+          </div>
+          </div>
+    </div>
+
+    <!--Recipe Search Section-->
+    <section id="search-recipe">
+    <h2 class="search-heading">Search something to cook today</h2>
+    <form action="">
+        <div class="search-input">
+          <input type="text" class="form-control" placeholder="Search any recipe">
+          <button class="search-button" id="search">Search</button>
+        </div>
+    </form>
+    </section>
+
+    <!--Searched Recipe Display Section-->
+    <div class="display-recipes" id="display-recipes">
+      <div class="card">
+        <a href="https://www.epicurious.com/recipes/food/views/chicken-teriyaki" target="_blank" rel="noopener noreferrer">
+        <img src="./images/chicken-teriyaki.png" class="card-img-top" alt="...">
+        </a>
+
+        <div class="card-body">
+          <h3 class="card-title">Chicken Teriyaki</h5>
+          
+            <div class = "recipe-tags"> 
+                <p class="tags">japenese</p>
+                <p class="tags">main course</p>
+                <p class="tags">lunch/dinner</p>
+            </div>
+
+          <div class="recipe-info">
+              <div class="recipe-info">
+                <i class="fa-solid fa-bowl-food"></i>
+                <p style="font-size: 14px;">4 Servings</p>
+              </div>
+              <div class="recipe-info">
+                <i class="fa-solid fa-apple-whole"></i>
+                <p style="font-size: 14px;">2619 Calories</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://www.seriouseats.com/fettuccine-alfredo-sauce-italian-pasta-recipe" target="_blank" rel="noopener noreferrer">
+        <img src="./images/pasta.png" width="100%" class="card-img-top" alt="...">
+        </a>
+
+        <div class="card-body">
+          <h3 class="card-title">Roman fettuccine Alfredo</h3>
+          
+            <div class = "recipe-tags"> 
+                <p class="tags">italian</p>
+                <p class="tags">main course</p>
+                <p class="tags">snack</p>
+            </div>
+
+          <div class="recipe-info">
+              <div class="recipe-info">
+                <i class="fa-solid fa-bowl-food"></i>
+                <p style="font-size: 14px;">4 Servings</p>
+              </div>
+              <div class="recipe-info">
+                <i class="fa-solid fa-apple-whole"></i>
+                <p style="font-size: 14px;">2958 Calories</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://www.epicurious.com/recipes/food/views/our-favorite-apple-pie-recipe" target="_blank" rel="noopener noreferrer">
+        <img src="./images/apple-pie.png" class="card-img-top" alt="...">
+        </a>
+
+        <div class="card-body">
+          <h3 class="card-title">Apple Pie </h3>
+          
+            <div class = "recipe-tags"> 
+                <p class="tags">american</p>
+                <p class="tags">desserts</p>
+                <p class="tags">lunch/dinner</p>
+            </div>
+
+          <div class="recipe-info">
+              <div class="recipe-info">
+                <i class="fa-solid fa-bowl-food"></i>
+                <p style="font-size: 14px;">10 Servings</p>
+              </div>
+              <div class="recipe-info">
+                <i class="fa-solid fa-apple-whole"></i>
+                <p style="font-size: 14px;">3016 Calories</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="https://www.jamieoliver.com/recipes/rice-recipes/sushi-rolls/" target="_blank" rel="noopener noreferrer">
+        <img src="./images/sushi.png" class="card-img-top" alt="...">
+        </a>
+
+        <div class="card-body">
+          <h3 class="card-title">Sushi Rolls </h3>
+          
+            <div class = "recipe-tags"> 
+                <p class="tags">japanese</p>
+                <p class="tags">main course</p>
+                <p class="tags">lunch/dinner</p>
+            </div>
+
+          <div class="recipe-info">
+              <div class="recipe-info">
+                <i class="fa-solid fa-bowl-food"></i>
+                <p style="font-size: 14px;">3 Servings</p>
+              </div>
+              <div class="recipe-info">
+                <i class="fa-solid fa-apple-whole"></i>
+                <p style="font-size: 14px;">878 Calories</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--All Recipe Section-->
+    <div class="all-recipes-container" id="all-recipes">
+      <button class="button" id="load-all-recipes" style="vertical-align:middle"><span>All-recipes </span></button>
+    </div>
+
+    <!--Recipes by Meal Section-->
+    <div class="meals-section" id="meals">
+      <h2 class="meals-heading">Plan Your Meals</h2>
+      <div class="container">
+        <div class="meal-card" id="breakfast-recipes">
+          <div class="face face1">
+            <div class="content">
+              <img src="./images/Pancake Stack.png" />
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <h2>Breakfast</h2>
+            </div>
+          </div>
+        </div>
+        <div class="meal-card" id="lunch-recipes">
+          <div class="face face1">
+            <div class="content">
+              <img src="./images/Thanksgiving.png" />
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <h2>Lunch/Dinner</h2>
+            </div>
+          </div>
+        </div>
+        <div class="meal-card" id="snacks-recipes">
+          <div class="face face1">
+            <div class="content">
+              <img src="./images/Tapas.png" />
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <h2>Snacks</h2>
+            </div>
+          </div>
+        </div>
+        <div class="meal-card" id="teatime-recipes">
+          <div class="face face1">
+            <div class="content">
+              <img src="./images/Tea.png" />
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <h2>Teatime</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--Recipes by Cuisine Section-->
+    <h2 class="cuisine-heading" id="cuisines">Explore Cuisines</h2>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="british-recipes">
+          <img src="./images/english.jpg" />
+          <h3 class="slide-text">BRITISH</h3>
+        </div>
+        <div class="swiper-slide" id="korean-recipes">
+          <img src="./images/korean.jpg" />
+          <h3 class="slide-text">KOREAN</h3>
+        </div>
+        <div class="swiper-slide" id="indian-recipes">
+          <img src="./images/indian.jpg" />
+          <h3 class="slide-text">INDIAN</h3>
+        </div>
+        <div class="swiper-slide" id="french-recipes">
+          <img src="./images/french.jpg" />
+          <h3 class="slide-text">FRENCH</h3>
+        </div>
+        <div class="swiper-slide" id="italian-recipes">
+          <img src="./images/italian.png" />
+          <h3 class="slide-text">ITALIAN</h3>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+    <!--Footer Section-->
+    <div class="footer-container">
+      <div class="footer-e1">
+        <h4>NEWSLETTER</h4>
+        <h2>The recipes you love!</h2>
+        <p>Get weekly updates with new, tasty and healthy recipes.</p>
+        <form>
+        <input type="email" class="email-input" placeholder="Write your email-address">
+        <button class="signup-button" id="search">Sign up</button>
+      </form>
+      </div>
+      <div class="footer-e2">
+        <a href="#home">Home</a>
+        <a href="#search-recipe">Search</a>
+        <a href="#all-recipes">All Recipes</a>
+        <a href="#meals">Plan Your Meals</a>
+        <a href="#cuisines">Explore Cuisines</a>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+  
+  </body>
+</html>
