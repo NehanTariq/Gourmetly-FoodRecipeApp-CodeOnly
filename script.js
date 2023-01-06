@@ -1,7 +1,7 @@
 
 form = document.querySelector('form')
-let APP_ID = "ece193d7"
-let API_KEY = "9a5fc3dc4c978bfd529c9eef65637ff4"
+var APP_ID = config.MY_APP_ID;
+var API_KEY = config.MY_API_KEY;
 
 // Add an event listener to the form that runs the function sendApiRequest when it is clicked
 form.addEventListener('submit', function(e){
